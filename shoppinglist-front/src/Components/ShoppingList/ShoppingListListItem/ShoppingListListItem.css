@@ -1,0 +1,29 @@
+img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.shoppinglist-listitem {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 2vw 0 2vw;
+}
+
+.shoppinglist-listitem-header {
+    flex: 0 1 2vw;
+}
+
+.shoppinglist-listitem-main {
+    flex: 1 0 auto;
+}
+
+.shoppinglist-listitem-footer {
+    flex: 0 1 2vw;
+}
+
+.shoppinglist-listitem-delete {
+
+}

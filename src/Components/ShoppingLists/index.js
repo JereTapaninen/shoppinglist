@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './ShoppingLists.css';
 import { inject, observer } from 'mobx-react';
 import ShoppingListListItem from './ShoppingListsListItem/';
+import MdPlaylistAdd from 'react-icons/lib/md/playlist-add';
 
 @inject("store")
 @observer
@@ -30,6 +31,7 @@ class ShoppingLists extends Component {
                 </main>
                 <footer className="shoppinglists-footer">
                     <button className="shoppinglists-button" onClick={startCreatingShoppingList}>
+                        <MdPlaylistAdd color="green" />
                         Create shopping list
                     </button>
                 </footer>

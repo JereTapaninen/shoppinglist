@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 import './ShoppingListsListItem.css';
+import MdDelete from 'react-icons/lib/md/delete';
 
 @observer
 class ShoppingListsListItem extends Component {
@@ -12,8 +13,8 @@ class ShoppingListsListItem extends Component {
                 <p>
                     {shoppingList.name}
                 </p>
-                <button onClick={() => deleteShoppingList(shoppingList)}>
-                    DEL
+                <button className="shoppinglists-listitem-delete" onClick={() => deleteShoppingList(shoppingList)}>
+                    <MdDelete color="darkred" />
                 </button>
             </div>
         );
